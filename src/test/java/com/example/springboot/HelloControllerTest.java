@@ -22,6 +22,7 @@ public class HelloControllerTest {
 
 	@Test
 	public void getHello() throws Exception {
+		System.out.println("test sum calculation-controller");
 		mvc.perform(MockMvcRequestBuilders.get("/4/8").accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
 				.andExpect(content().string(equalTo("12")));
