@@ -7,10 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-	@GetMapping("/{first}/{second}")
+	@GetMapping("sum/{first}/{second}")
 	public Integer sum(@PathVariable int first, @PathVariable int second)
 	{
 		return first+second;
 	}
 
+//	@GetMapping("minus/{first}/{second}")
+//	public Integer minus(@PathVariable int first, @PathVariable int second)
+//	{
+//		return first-second;
+//	}
 }

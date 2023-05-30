@@ -27,4 +27,12 @@ public class HelloControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().string(equalTo("12")));
 	}
+
+//	@Test
+//	public void getMinus() throws Exception {
+//		System.out.println("test minus calculation-controller-modified");
+//		mvc.perform(MockMvcRequestBuilders.get("/9/4").accept(MediaType.APPLICATION_JSON))
+//				.andExpect(status().isOk())
+//				.andExpect(content().string(equalTo("5")));
+//	}
 }
