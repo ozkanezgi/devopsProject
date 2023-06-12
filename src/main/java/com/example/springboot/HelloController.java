@@ -2,13 +2,14 @@ package com.example.springboot;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
 
-	@GetMapping("sum/{first}/{second}")
-	public Integer sum(@PathVariable int first, @PathVariable int second)
+	@GetMapping("/sum")
+	public Integer sum(@RequestParam int first, @RequestParam int second)
 	{
 		return first+second;
 	}
