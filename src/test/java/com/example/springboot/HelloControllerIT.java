@@ -16,7 +16,7 @@ public class HelloControllerIT {
 	private TestRestTemplate template;
 
     @Test
-    public void getHello() throws Exception {
+    public void getSum() throws Exception {
         System.out.println("test sum calculation-IT");
         ResponseEntity<Integer> response = template.getForEntity("/4/8", Integer.class);
         assertThat(response.getBody()).isEqualTo(12);
